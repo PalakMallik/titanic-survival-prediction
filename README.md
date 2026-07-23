@@ -56,7 +56,7 @@ Performed detailed exploratory data analysis including:
 
 ## Survival Rate by Sex and Survival Rate by Class
 
-![Survival by Sex and Survival by Class](images/survival-rate-by-sex and survival-rate-by-class.png)
+![Survival by Sex and Survival by Class](images/survival-rate-by-features.png)
 
 ---
 
@@ -65,7 +65,7 @@ Performed detailed exploratory data analysis including:
 Created a new feature:
 
 ```python
-Family Size = SibSp + Parch + 1
+Family Size = sibSp + parch + 1
 ```
 
 This represents the total number of family members travelling together.
@@ -132,7 +132,7 @@ Titanic-Survival-Prediction/
 ├── images/
 │   ├── classification-report.png
 │   ├── correlation-heatmap.png
-│   └── survival-rate-by-sex and survival-rate-by-class.png
+│   └── survival-rate-by-features.png
 │
 ├── .gitignore
 ├── README.md
@@ -145,8 +145,8 @@ Titanic-Survival-Prediction/
 
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
-- Feature Engineering
 - Data Visualization
+- Feature Engineering
 - Logistic Regression
 - Binary Classification
 - Model Evaluation
