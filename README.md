@@ -1,52 +1,66 @@
 # 🚢 Titanic Survival Prediction using Logistic Regression
 
-A Machine Learning classification project that predicts whether a passenger survived the Titanic disaster based on passenger information. This project demonstrates the complete machine learning workflow, including data preprocessing, exploratory data analysis (EDA), feature engineering, model building, and evaluation using Logistic Regression.
+A Machine Learning classification project that predicts whether a passenger survived the Titanic disaster using **Logistic Regression**. This project demonstrates the complete machine learning workflow, including data preprocessing, exploratory data analysis (EDA), feature engineering, model training, and evaluation.
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-The objective of this project is to build a binary classification model that predicts passenger survival on the Titanic dataset.
+The objective of this project is to predict whether a passenger survived the Titanic disaster based on passenger information.
 
-Target Variable:
-- **Survived**
-  - 0 → Did Not Survive
-  - 1 → Survived
+**Target Variable**
+
+- **0** → Did Not Survive
+- **1** → Survived
 
 ---
 
-## 📂 Dataset
+# 📂 Dataset
 
-The dataset contains passenger details such as:
+Dataset Source: Seaborn Titanic Dataset
 
-- Passenger Class (Pclass)
+The dataset contains passenger information such as:
+
+- Passenger Class
 - Sex
 - Age
 - Fare
-- Number of Siblings/Spouses (SibSp)
-- Number of Parents/Children (Parch)
+- Number of Siblings/Spouses
+- Number of Parents/Children
 - Embarked Port
-- Cabin
-- Passenger Name
+- Adult male
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+# 🔍 Exploratory Data Analysis
 
 Performed detailed exploratory data analysis including:
 
-- Missing value analysis
-- Distribution of numerical features
-- Survival rate comparison
-- Correlation analysis
-- Survival by gender
-- Survival by passenger class
-- Survival by family size
-- Feature relationship visualizations using Seaborn and Matplotlib
+- Missing Value Analysis
+- Distribution of Numerical Features
+- Correlation Heatmap
+- Survival Rate by Gender
+- Survival Rate by Passenger Class
+- Survival Rate by Family Size
+- Feature Relationship Analysis
 
 ---
 
-## ⚙️ Feature Engineering
+# 📊 Visualizations
+
+## Correlation Heatmap
+
+![Correlation Heatmap](images/correlation-heatmap.png)
+
+---
+
+## Survival Rate by Sex and Survival Rate by Class
+
+![Survival by Sex and Survival by Class](images/survival-rate-by-sex and survival-rate-by-class.png)
+
+---
+
+# ⚙️ Feature Engineering
 
 Created a new feature:
 
@@ -54,47 +68,49 @@ Created a new feature:
 Family Size = SibSp + Parch + 1
 ```
 
-This feature represents the total number of family members traveling together, including the passenger.
+This represents the total number of family members travelling together.
 
 ---
 
-## 🛠️ Data Preprocessing
+# 🛠 Data Preprocessing
 
 - Handled missing values
 - Encoded categorical variables
-- Selected relevant features
+- Feature Engineering
 - Train-Test Split
 
 ---
 
-## 🤖 Machine Learning Model
-
-**Algorithm Used**
+# 🤖 Model Used
 
 - Logistic Regression
 
 ---
 
-## 📊 Model Evaluation
+# 📈 Model Performance
 
-Evaluation metrics used:
+| Metric | Score |
+|---------|-------|
+| Accuracy | **79.8%** |
+
+
+### Evaluation Metrics
 
 - Accuracy Score
 - Confusion Matrix
+- Precision
+- Recall
+- F1-Score
 - Classification Report
-  - Precision
-  - Recall
-  - F1-Score
 
-### 📈 Model Performance
+### Classification Report
 
-| Metric | Value |
-|---------|--------|
-| Accuracy | **79.8%** |
+![Classification Report](images/classification-report.png)
+
 
 ---
 
-## 🧰 Technologies Used
+# 🛠 Technologies Used
 
 - Python
 - Pandas
@@ -103,18 +119,29 @@ Evaluation metrics used:
 - Seaborn
 - Scikit-learn
 - Google Colab
+---
+
+# 📁 Project Structure
+
+```
+Titanic-Survival-Prediction/
+│
+├── data/
+│   └── titanic-dataset.csv
+│
+├── images/
+│   ├── classification-report.png
+│   ├── correlation-heatmap.png
+│   └── survival-rate-by-sex and survival-rate-by-class.png
+│
+├── .gitignore
+├── README.md
+└── titanic-survival-predictor.ipynb
+```
 
 ---
 
-## 📁 Project Structure
-
-```
-
-```
-
----
-
-## 🚀 Key Learning Outcomes
+# 🚀 Key Learnings
 
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
@@ -123,22 +150,22 @@ Evaluation metrics used:
 - Logistic Regression
 - Binary Classification
 - Model Evaluation
-- Machine Learning Workflow
+- Machine Learning Pipeline
 
 ---
 
-## 📌 Future Improvements
+# 🔮 Future Improvements
 
 - Feature Scaling
 - ROC Curve & AUC Score
 - Cross Validation
 - Hyperparameter Tuning
 - Compare Multiple Classification Models
-- Deploy using Streamlit
+- Streamlit Deployment
 
 ---
 
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Palak Mallik**
 
